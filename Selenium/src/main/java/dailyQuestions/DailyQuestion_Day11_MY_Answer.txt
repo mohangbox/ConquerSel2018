@@ -1,0 +1,41 @@
+1. write xpath using preceding and Absolute?
+
+preceding:
+<div id="cities">  
+ <country>France</country>  
+   <city>Paris</city>  
+   <country>UK</country>  
+   <city>London</city>  
+   <city>Manchester</city>  
+   <city>Liverpool</city>  
+   <country>Denmark</country>  
+   <city>Copenhagen</city>  
+   <country>Ukraine</country>  
+   <city>Kiev</city>  
+   <city>Odessa</city>  
+ </div> 
+
+Xpath:
+/div/country[.='Denmark']/preceding-sibling::city
+
+Absolute: driver.findElementByXPath("/html/body/div[5]/div/div/div[1]/div/div[2]/form/table/tbody/tr[3]/td/input");
+
+2. How to locate the elements using xpath?
+Step#1. The primary step is to launch the Google Chrome’s Developer tool. Press F12 to launch the tool.
+
+
+
+
+
+http://www.softwaretestinghelp.com/locate-elements-in-chrome-ie-selenium-tutorial-7/
+
+Step#2. To locate the desired object within the web page and right click on the desired web element and inspect. The HTML property belonging to that web element would be highlighted in the developer tool.
+
+Step#3. Open the console tab and Type the created Xpath and enclose it in $x(“//input[@id=’Email’]”)
+
+Step#4. Press the enter key to see all the matching HTML elements with the specified Xpath
+
+
+
+https://dpastov.blogspot.in/2015/10/preceding-sibling-and-following-signling-xpath.html
+http://www.softwaretestinghelp.com/locate-elements-in-chrome-ie-selenium-tutorial-7/

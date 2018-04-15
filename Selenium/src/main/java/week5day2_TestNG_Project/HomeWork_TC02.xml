@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="sequentially">
+		<classes>
+			<class name="week5day2_TestNG_Project.Lead_CreateLead" />
+			<class name="week5day2_TestNG_Project.Lead_EditLead" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="parallely" thread-count="5" parallel="true">
+		<classes>
+			<class name="week5day2_TestNG_Project.Lead_MergeLead" />
+			<class name="week5day2_TestNG_Project.Lead_DeleteLead" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

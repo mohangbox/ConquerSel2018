@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" thread-count="5" parallel="instances" verbose="1">
+	<test name="test">
+		<classes>
+			<class name="week5day2_TestNG_2XML.TestNG_SC05_TC01_Attribute">
+				<methods>
+					<include name="loadTestThisWebsite1" />
+				</methods>
+			</class>
+			<class name="week5day2_TestNG_2XML.TestNG_SC05_TC04_Attribute">
+				<methods>
+					<include name="loadTestThisWebsite1" />
+					<include name="loadTestThisWebsite3" />
+					<include name="loadTestThisWebsite2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

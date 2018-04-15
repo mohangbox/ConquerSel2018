@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+  <test name="order">
+	<packages>
+			<package name="week5day2_TestNG_2XML.*" />			
+	</packages>
+  </test>
+</suite>

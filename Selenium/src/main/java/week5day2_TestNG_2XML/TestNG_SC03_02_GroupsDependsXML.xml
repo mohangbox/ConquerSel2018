@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+	<groups>
+		<dependencies>
+			<group name="regression" depends-on="smoke"/>
+		</dependencies>
+	</groups>
+		<classes>
+			<class name="week5day2_TestNG_2XML.TestNG_SC03_TC01_GroupsDepends_Smoke" />
+			<class name="week5day2_TestNG_2XML.TestNG_SC03_TC02_GroupsDepends_Sanity" />
+			<class name="week5day2_TestNG_2XML.TestNG_SC03_TC03_GroupsDepends_Regression" />
+			<class name="week5day2_TestNG_2XML.TestNG_SC03_TC04_GroupsDepends_ToCommon" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,41 @@
+1) To close an alert, use either dismiss (negative) or accept (positive) method.
+
+// Switch from the browser to alert 
+// switchTo() method returns TargetLocator Interface 
+// alert() method returns Alert Interface 
+Alert alert = driver.switchTo().alert();
+
+// accept the alert and accept method returns void
+alert.accept();
+
+// If the alert does not exist during switch - it throws NoAlertPresentException class.
+
+1) Difference between class and interface
+
+Class
+
+Classes in Java have members - fields and methods. Each object is an instance of a class, and follows the class prototype that defines the variables and methods common to all objects. Each instance of a class must be instantiated, after it is declared. This is usually done with the keyword "new".
+
+Classes may have inheritance from other classes meaning they incherit all the properties of the parent class. This is usually done with the keyword "extends".
+
+Example: 
+
+RemoteWebDriver (This is the super class and that has most of the commonly used methods like get, findElement, findElementById, findElements, findElementsByLinkText, close, getText etc); Whereas ChromeDriver is a sub class of the RemoteWebDriver class and hence ChromeDriver extends RemoteWebDriver
+
+Other Examples
+
+RemoteWebElement, FirefoxDriver, Actions
+
+Interface
+
+An interface, or protocol as it is sometimes called, set of rules that allow unrelated objects to interact with one another, by implementing an agreed upon system of behavior. When a class implements an interface, the class agrees to implement all of the methods defined in the interface. 
+
+Interfaces are useful since they capture similiarity between non-related objects (like Car vs Auto) without forcing a class relationship. Furthermore, interfaces may consist of abstract methods. A class uses an interface by using the "implements" keyword.
+
+Example
+
+WebDriver is an interface and that has commonly abstract methods like get, findElement, findElements, close, getText etc. RemoteWebDriver implements WebDriver.
+
+Other Examples
+
+Alert, TargetLocator, WebElement

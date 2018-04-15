@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <test thread-count="2" name="Test" time-out="20000">
+    <classes>
+      <class name="week5day2_TestNG_2XML.TestNG_SC05_TC01_Attribute"/>
+      <class name="week5day2_TestNG_2XML.TestNG_SC05_TC02_Attribute"/>
+      <class name="week5day2_TestNG_2XML.TestNG_SC05_TC03_Attribute"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

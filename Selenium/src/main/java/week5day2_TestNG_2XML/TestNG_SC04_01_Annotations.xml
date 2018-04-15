@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- @BeforeSuite -->
+<suite name="TestAll">
+
+	<!-- @BeforeTest -->
+	<test name="case1">
+	  <classes>
+		<class name="week5day2_TestNG_2XML.TestNG_SC04_TC01_Annotations_TestConfiguration" />
+		<class name="week5day2_TestNG_2XML.TestNG_SC04_TC02_Annotations_DBConfig" />
+		<class name="week5day2_TestNG_2XML.TestNG_SC04_TC03_Annotations_TestDBConnection" />
+	  </classes>
+	</test>
+	<!-- @AfterTest -->
+	
+	<!-- @BeforeTest -->
+	<test name="case2">
+	  <classes>
+		<class name="week5day2_TestNG_2XML.TestNG_SC04_TC02_Annotations_DBConfig" />
+		<class name="week5day2_TestNG_2XML.TestNG_SC04_TC03_Annotations_TestDBConnection" />
+	  </classes>
+	</test>
+	<!-- @AfterTest -->
+	
+</suite>
+<!-- @AfterSuite -->

@@ -1,0 +1,47 @@
+/*Daily Questions Day-12
+
+1) What are the ways to handle checked exceptions? Provide some examples of checked exceptions you have seen in your project?
+
+Checked exceptions are checked at compile-time. It means if a method is throwing a checked exception then it should handle the exception using try-catch block or it should declare the exception using throws keyword, otherwise the program will give a compilation error.
+
+Method 1: Declare the exception using throws keyword:
+public void Create_Accounts() throws InterruptedException, IOException {
+
+Method 2: Handle them using try-catch blocks:
+public void clickWithNoSnap(WebElement ele) {
+		try {
+			ele.click();
+			Thread.sleep(2000);
+			System.out.println("The element "+ele+" is clicked successfully");
+		} catch (NoSuchElementException e) {
+			System.err.println("NoSuchElementException");
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.err.println("Exception");
+			e.printStackTrace();
+		}
+	}
+
+
+
+2) How to automate dynamically changing objects in selenium?
+The dynamic element is that Web Element whose ID’s, actually not only ID’s it can be any attribute like Class Name, Value etc. are not fixed. It changes every time you reload the page. So, you cannot handle that element simply by the locator.
+
+Most of the time, ID and class name get changed in the page and we can consider which is not dynamically changed objects in the page.
+
+Option 1 : We can use absolute xpath (full xpath) where you not need to give any attribute names In xpath.
+/html/body/div[5]/div/div/div[1]/div/div[2]/form/table/tbody/tr[3]/td/input
+
+Option 2 : We can use starts-with function. In this xpath's ID attribute, "post-body-" part remain same every time. (//div[starts-with(@id,'labe')]/a)[1]
+
+Option 3 : We can use contains function. Same way you can use contains function as bellow.
+//*[contains(text(), 'CRM/SFA')]
+
+Option 4 : Look for any other attribute which Is not changing every time In that div node like name, class etc. So If this div node has class attribute then we can write xpath as bellow.
+(//div[@class='x-grid3-body'])/div[1]
+
+*/
+
+
+
+

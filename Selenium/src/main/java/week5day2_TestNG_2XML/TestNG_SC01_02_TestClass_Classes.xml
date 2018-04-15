@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" >
+	<test name="order">
+		<classes>
+			<class name="week5day2_TestNG_2XML.TestNG_SC01_TC01_TestClass_TestConfig" />
+			<class name="week5day2_TestNG_2XML.TestNG_SC01_TC03_TestClass_TestOrder" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="database">
+		<classes>
+			<class name="week5day2_TestNG_2XML.TestNG_SC01_TC01_TestClass_TestConfig" />
+			<class name="week5day2_TestNG_2XML.TestNG_SC01_TC02_TestClass_TestDataBase" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
